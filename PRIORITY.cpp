@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main()
  {
-   int x,n,p[10],pp[10],pt[10],w[10],t[10],awt,atat,i;
+   int x,n,p[10],pp[10],pt[10],w[10],t[10],i;
+   float awt,atat;
    printf("Enter the number of process : ");
    scanf("%d",&n);
    printf("\n Enter process : time priorities \n");
@@ -45,7 +46,7 @@ for(i=0;i<n;i++)
   printf("\n %d \t\t %d  \t\t %d \t\t %d \t\t %d \n",p[i],pt[i],w[i],t[i],pp[i]);
 awt/=n;
 atat/=n;
-printf("\n Average Wait Time : %d \n",awt);
-printf("\n Average Turn Around Time : %d \n",atat);
+printf("\n Average Wait Time : %.2f \n",awt);
+printf("\n Average Turn Around Time : %.2f \n",atat);
 return 0;
 }
